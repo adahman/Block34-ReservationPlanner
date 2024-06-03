@@ -17,7 +17,7 @@ router.get("/", async (req, res, next) => {
 });
 
 
-//single restaurants
+//single restaurants reservation by id
 router.get("/:id/reservations", async (req, res, next) => {
   try {
     res.send(await getSingleReservationByRestaurantId(req.params.id));
